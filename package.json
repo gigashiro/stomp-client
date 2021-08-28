@@ -18,20 +18,14 @@
   },
   "main": "lib/client.js",
   "engines": {
-    "node": ">= 0.10"
+    "node": ">= 12"
   },
   "dependencies": {},
-  "devDependencies": {
-    "nodeunit": "0.9.1",
-    "jshint": "2.8.0"
-  },
+  "devDependencies": {},
   "license": "MIT",
   "keywords": [
     "stomp",
     "messaging"
   ],
-  "scripts": {
-    "test": "nodeunit test",
-    "lint": "[ -z \"$LINTFILES\" ] && LINTFILES='**'; ./node_modules/jshint/bin/jshint ${LINTFILES}"
-  }
+  "scripts": {}
 }
