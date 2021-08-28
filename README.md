@@ -1,6 +1,8 @@
 Stomp Client
 ===========
 
+# Will be rewritten in TS!!!!
+
 [![Build Status](https://img.shields.io/travis/easternbloc/node-stomp-client.svg?style=flat-square)](http://travis-ci.org/easternbloc/node-stomp-client)
 [![Monthly Downloads](https://img.shields.io/npm/dm/stomp-client.svg?style=flat-square)](https://www.npmjs.com/package/stomp-client)
 [![Version](https://img.shields.io/npm/v/stomp-client.svg?style=flat-square)](https://www.npmjs.com/package/stomp-client)
