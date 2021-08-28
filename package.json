@@ -12,7 +12,7 @@
   ],
   "name": "@gigashiro/stomp-client",
   "description": "A STOMP protocol implementation in node.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "url": "http://github.com/gigashiro/stomp-client"
   },
