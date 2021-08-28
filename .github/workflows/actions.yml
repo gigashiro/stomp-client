@@ -10,8 +10,15 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 10
-      - run: echo "//registry.npmjs.org/:_authToken=$NODE_TOKEN" >> ~/.npmrc
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: git config user.name $GITHUB_ACTOR
+      - run: git config user.email gh-actions-${GITHUB_ACTOR}@github.com
+      - run: git remote add gh-origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run: npm version patch
       - run: npm publish
+      - run: git push gh-origin HEAD:master --tags
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
