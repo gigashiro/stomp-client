@@ -17,6 +17,9 @@
     "url": "http://github.com/gigashiro/stomp-client"
   },
   "main": "lib/client.js",
+  "files": [
+    "/lib"
+  ],
   "engines": {
     "node": ">= 12"
   },
